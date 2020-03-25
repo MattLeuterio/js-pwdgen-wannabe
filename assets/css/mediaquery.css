@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+  .app__title h1 {
+    font-size: 35px;   
+  }
+
+  .app__password h2 {
+    font-size: 14px;
+  }
+
+  .app__title img {
+    width: 40px;
+    vertical-align: middle;
+  }
+}

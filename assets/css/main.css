@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(39, 39, 39);
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.app__title h5 {
+  text-align: right;
+}
+
+.app__title h1 {
+  text-align: left;
+  font-weight: 100;
+  font-size: 65px;
+  background: -webkit-linear-gradient(#bb0202, #330000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app__title h5 {
+  font-weight: 400;
+}
+
+.app__title img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.app__ut-dati {
+  margin-top: 10px;
+}
+
+
+.app__ut-dati h3{
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.app__password h2 {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#passgen {
+  font-style: italic;
+  background: #dd202d;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
