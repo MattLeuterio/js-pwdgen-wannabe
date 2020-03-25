@@ -24,6 +24,20 @@ body {
   align-items: center;
 }
 
+@keyframes fadeInDown {
+ 
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 
 .app__title h5 {
@@ -37,6 +51,7 @@ body {
   background: -webkit-linear-gradient(#bb0202, #330000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: fadeInDown 1s;
 }
 
 .app__title h5 {
@@ -66,10 +81,36 @@ body {
   font-weight: 400;
 }
 
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
 #passgen {
   font-style: italic;
   background: #dd202d;
   display: inline-block;
   padding: 10px;
   color: #fff;
+  animation: shake .5s;
 }
